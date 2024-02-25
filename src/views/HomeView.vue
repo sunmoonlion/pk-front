@@ -3,7 +3,14 @@ import HelloWorld from '../components/HelloWorld.vue'
 </script>
 
 <template>
-  <main>
+  <main class="main">
     <HelloWorld />
   </main>
 </template>
+
+<style lang="scss">
+.main {
+  color: red;
+}
+</style>
+

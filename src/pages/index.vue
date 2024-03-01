@@ -3,6 +3,7 @@ import { createWebHistory } from 'vue-router';
     <div>
         hello world by unplugin-vue-router
     </div>
+    <h1 class="text-3xl font-bold underline">hello tailwind</h1>
     <RouterLink to="/about">about</RouterLink>
     <RouterLink to="/">home</RouterLink>
 </template>

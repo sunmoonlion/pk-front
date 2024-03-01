@@ -5,6 +5,7 @@ import { createWebHistory } from 'vue-router';
     </div>
     <RouterLink to="/about">about</RouterLink>
     <RouterLink to="/">home</RouterLink>
+    <h1 class="text-3xl font-bold underline">hello world</h1>
 </template>
 
 <script setup lang="ts">

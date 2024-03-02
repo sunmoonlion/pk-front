@@ -8,6 +8,8 @@ import { createWebHistory } from 'vue-router';
     <h1 class="text-3xl font-bold underline">hello world</h1>
     <div>{{ msg }}</div>
     <div>x:{{ x }},y:{{ y }},isOutside:{{ isOutside }}</div>
+    <HelloWorld></HelloWorld> 
+    <userUserComponent></userUserComponent>
 </template>
 
 <script setup lang="ts">

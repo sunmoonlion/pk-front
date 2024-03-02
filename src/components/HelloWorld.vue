@@ -3,7 +3,7 @@
 
 <template>
   <div class="greetings">
-    hello world
+    hello world by unplugin-vue-components
   </div>
 </template>
 

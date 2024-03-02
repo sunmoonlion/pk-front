@@ -9,6 +9,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import Layouts from 'vite-plugin-vue-layouts'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -41,6 +42,10 @@ export default defineConfig({
       collapseSamePrefixes: true,
       resolvers: [ElementPlusResolver()],
     }),
+    Layouts({
+      layoutsDirs: 'src/layouts',
+      defaultLayout: 'default',
+    })
   ],
   resolve: {
     alias: {

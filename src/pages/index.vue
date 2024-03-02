@@ -18,6 +18,19 @@ import { createWebHistory } from 'vue-router';
         <el-button type="warning">Warning</el-button>
         <el-button type="danger">Danger</el-button>
     </el-row>
+    <!-- A basic anchor icon from Phosphor icons -->
+    <div class="i-ph-anchor-simple-thin" />
+    <!-- An orange alarm from Material Design Icons -->
+    <div class="i-mdi-alarm text-orange-400" />
+    <!-- A large Vue logo -->
+    <div class="i-logos-vue text-3xl" />
+    <!-- Sun in light mode, Moon in dark mode, from Carbon -->
+    <button class="i-carbon-sun dark:i-carbon-moon" />
+    <!-- Twemoji of laugh, turns to tear on hovering -->
+    <div class="i-twemoji-grinning-face-with-smiling-eyes hover:i-twemoji-face-with-tears-of-joy" />
+    <!-- custom plane -->
+    <div class="i-ion:airplane" style="color: red;font-size: 1.5rem;"></div>
+
 </template>
 
 <script setup lang="ts">
@@ -34,3 +47,8 @@ const {x,y,isOutside} = useMouseInElement(target)
 <style scoped>
 
 </style>
+
+<route lang="yaml">
+    meta:
+    layout:default
+</route>

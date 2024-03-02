@@ -17,3 +17,9 @@ import { RouterLink } from 'vue-router/auto';
     }
 }
 </style>
+
+
+<route lang="yaml">
+    meta:
+    layout:home
+</route>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        UserComponent by unplugin-vue-components for vue under user dir
+        NOT FOUND
     </div>
 </template>
 
@@ -11,3 +11,8 @@
 <style scoped>
 
 </style>
+
+<route lang="yaml">
+meta:
+    layout: 404
+</route>

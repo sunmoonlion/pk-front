@@ -21,5 +21,5 @@ import { RouterLink } from 'vue-router/auto';
 
 <route lang="yaml">
     meta:
-        layout:home
+        layout:404
 </route>

@@ -26,16 +26,33 @@ import { createWebHistory } from 'vue-router';
     <div class="i-logos-vue text-3xl" />
     <!-- Sun in light mode, Moon in dark mode, from Carbon -->
     <button class="i-carbon-sun dark:i-carbon-moon" />
-    <!-- Twemoji of laugh, turns to tear on hovering -->
+    <!-- Twemoji of laugh, turns to tesar on hovering -->
     <div class="i-twemoji-grinning-face-with-smiling-eyes hover:i-twemoji-face-with-tears-of-joy" />
     <!-- custom plane -->
     <div class="i-ion:airplane" style="color: red;font-size: 1.5rem;"></div>
-
+    <ReloadPrompt></ReloadPrompt>
+    hello
 </template>
 
 <script setup lang="ts">
 import { RouterLink } from 'vue-router/auto';
-
+import { registerSW } from 'virtual:pwa-register'
+onMounted(() => {
+    registerSW(
+        {
+            immediate: true,
+            onNeedRefresh() {
+                console.log('NeedRefresh')
+            },
+            onRegisteredSW(url, registration) {
+                console.log(url, registration)
+                setInterval(() => {
+                    registration&&registration.update()
+                },5000)
+            }
+        }
+    )    
+})
 
 const msg = ref("hello world by unplugin-auto-import");
 
@@ -50,5 +67,5 @@ const {x,y,isOutside} = useMouseInElement(target)
 
 <route lang="yaml">
     meta:
-    layout:default
+        layout:default
 </route>

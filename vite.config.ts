@@ -57,7 +57,7 @@ export default defineConfig({
         enable: false,
       }),
   ],
-  resolve: {
+  resolve: {                                        
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }

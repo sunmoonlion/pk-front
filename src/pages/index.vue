@@ -46,6 +46,7 @@ onMounted(() => {
             },
             onRegisteredSW(url, registration) {
                 console.log(url, registration)
+                console.log('SW Registered')
                 setInterval(() => {
                     registration&&registration.update()
                 },5000)

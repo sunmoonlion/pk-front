@@ -61,10 +61,5 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  },
-  build: {
-    rollupOptions: {
-      external: ['workbox-window']
-    }
   }
 })

@@ -13,6 +13,7 @@ onMounted(() => {
         immediate: true,
         onRegisteredSW(url, registration) {
             console.log(url, registration),
+            console.log('SW Registered successfully!'),
                 setInterval(() => {
                     registration && registration.update()
                 }, 360000)

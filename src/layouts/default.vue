@@ -1,14 +1,11 @@
 <template>
-    <div>
-        default layout
-    </div>
-    <router-view></router-view>
+  <div class="flex">
+    <router-link to="/">home</router-link>
+    <router-link to="/about">about</router-link>
+  </div>
+  <router-view></router-view>
 </template>
 
-<script setup lang="ts">
+<script setup lang="ts"></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>
